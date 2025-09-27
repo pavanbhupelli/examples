@@ -1,0 +1,60 @@
+.boxes{
+    display: flex;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw; */
+    height: 100vh;
+    gap: 20px;
+    /* overflow: hidden; */
+}
+.box1{
+    border: 10px solid orange;
+    border-radius: 10%;
+    overflow: hidden;
+    /* width: 100vw; */
+    height: 700px;
+    /* margin: 100px 100px; */
+    height: fit-content;
+    background-color: rgb(92, 88, 88);
+    /* border-radius: 10px; */
+
+}
+.innerbox{
+    text-align: center;
+    padding-bottom: 10px;
+     background-color: rgb(92, 88, 88);
+    color: white;
+    /* height: auto;    */
+    border-radius: 10px;
+    /* padding: 100px; */
+    margin: 10px;
+    /* border-radius: 10px; */
+    
+}
+button{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    border-color: none;
+    background-color: rgb(230, 164, 13);
+}
+@media (max-width: 800px) {
+
+  .boxes {
+    flex-direction: column;
+    padding: 0px 15px;
+    align-items: center;
+  }
+  .box1{
+    flex-direction: column;
+    /* padding: 0 15px; */
+    align-items: center;
+
+  }
+  .innerbox{
+    flex-direction: column;
+    padding: 0px 15px;
+    align-items: center;
+  }
+}
